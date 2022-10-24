@@ -1,0 +1,25 @@
+﻿/Olivia Bianelli Navarrete Carrasco A01654903
+/Cristóbal Meza A01661792
+/Damián Suárez A01656277
+/Programa8.mas
+
+loop, LoadI local /Lugar donde esta el numero
+	Add one
+    StoreI nxt /lo guarda en la posicion sig
+    Load nxt /Pasa la posicion y la pos siguiente a +1
+    Add one
+    Store nxt
+    Load local
+    Add one
+    Store local
+    Load count	/cuenta si ya pasaron 6 numeros
+    Subt one
+    Store count
+    Skipcond 400
+    jump loop
+    halt	
+one, DEC 1
+local, HEX 013
+nxt, HEX 014
+count, DEC 6
+value, DEC 1

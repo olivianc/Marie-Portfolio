@@ -1,0 +1,27 @@
+﻿/Olivia Bianelli Navarrete Carrasco A01654903 
+/Cristóbal Meza A01661792
+/Damián Suárez A01656277 
+/Programa9.mas
+
+loop,	Input
+		AddI memoria /Sumar a la memoria
+		StoreI memoria / Cargar a la memoria
+		Output
+		Load memoria / Cargar la dirección
+		Add uno /+1
+		Store memoria /Actualizar memoria +1
+		Load Counter /Carga el contador
+		Subt uno /-1
+		Store Counter /Actualizar el contador -1
+		Skipcond 400 / Si es 0 salta la línea siguiente
+		Jump loop / Salta a loop 
+        Clear / Limpia AC 
+		Halt /Termina el programa 
+uno, DEC 1
+memoria, HEX 11 /Valor del apuntador 
+Counter, DEC 5
+		DEC -4
+        DEC 3
+        DEC 5
+        DEC 6
+        DEC 9

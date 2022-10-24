@@ -1,0 +1,32 @@
+﻿/Olivia Bianelli Navarrete Carrasco A01654903 
+/Cristóbal Meza A01661792
+/Damián Suárez A01656277 
+/Programa4.mas 
+Load Crtr
+Store Direction
+Load Zero
+Store Cnt
+Count, LoadI Direction
+Skipcond 800
+Jump Result
+Load Cnt
+Add One
+Store Cnt
+Load Direction 
+Add One
+Store Direction
+Jump Count
+Result, Load Cnt /Hace la suma total 
+Output
+Halt
+Cnt, DEC 0
+One, DEC 1
+Zero, DEC 0
+Crtr, HEX 018
+Direction, HEX 000
+String, HEX 0083
+		HEX 0095
+		HEX 0070
+		HEX 0073
+		HEX 0065
+

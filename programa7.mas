@@ -1,0 +1,34 @@
+﻿/Olivia Bianelli Navarrete Carrasco A01654903 
+/Cristóbal Meza A01661792
+/Damián Suárez A01656277 
+/Programa7.mas
+
+clear
+Loop, LoadI DATA1 / Carga el valor a la primera dirección
+	Store T / Guarda el valor en la variable 
+	LoadI  DATA2 / Carga el valor a la última dirección
+	StoreI DATA1 / guarda el valor a la primera dirección
+	Load T / Carga el valor de la variable 
+	StoreI DATA2
+	Load DATA1 
+	Add One / Se le agrega uno 
+	Store DATA1 / Se le suma uno al valor
+	Load DATA2 / carga el último valor
+	Subt One / Le resta uno al valor anterior
+	Store DATA2 / Carga el ultimo valor - 1
+	Load C/ Carga el contador
+    Subt One / Le resta uno al contador
+    Store C /  El contador - 1
+	Skipcond 000 / Si el contador es menor a cero, salta a la siguiente condicion
+    Jump Loop / Da un salto al Loop
+EndLoop, halt / Termina el loop y el programa
+
+DATA1, HEX 18 
+T, DEC 0 
+DATA2, HEX 1B
+One, DEC 1 
+C, DEC 1 
+	DEC 100
+	DEC 75
+	DEC 50
+	DEC 25

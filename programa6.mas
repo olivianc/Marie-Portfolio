@@ -1,0 +1,38 @@
+﻿/Olivia Navarrete A01654903
+/programa6.mas 
+
+Clear
+Input
+Store A
+Input
+Store B
+Input
+Store C
+
+Clear
+Add A
+Subt B
+Add C
+Store Y
+
+loop,	Load result
+        Add Y
+        Store result
+        Load Count
+        Subt one
+        Store Count
+        Skipcond 400 
+        Jump loop 
+        Jump halt 
+		
+halt,    Load result
+         Output	
+         Halt
+
+Y, DEC 0
+Count, DEC 5
+one, DEC 1
+A, DEC 0
+B, DEC 0
+C, DEC 0
+result, DEC 0

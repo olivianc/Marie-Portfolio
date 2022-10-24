@@ -1,0 +1,32 @@
+﻿/Olivia Bianelli Navarrete Carrasco 
+/A01654903
+Getch,	LoadI Chptr
+		Skipcond 400
+		Jump  Outp
+		Halt
+Outp,	Output
+		Load Chptr
+		Add One
+		Store Chptr 
+		Jump Getch
+One, HEX  0001
+Chptr, HEX B
+String, DEC 072
+		DEC 101
+        DEC 108
+        DEC 108
+        DEC 111
+        DEC 032
+        DEC 119
+        DEC 111
+        DEC 114
+        DEC 108
+        DEC 100
+        DEC 033
+        DEC 000
+        
+        
+        
+
+
+
